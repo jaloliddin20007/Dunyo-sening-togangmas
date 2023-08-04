@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c864b107da.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="media/icons8-music-color-32.png" type="image/x-icon">
+    <title>Java Music</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <div><i class="fas fa-redo" id="replay-icon"></i></div>
+                </div>
+            </nav>
+            <img src="media/java---achinaman.jpg" class="song-img">
+            <h2>Dunyo sening tog'angmas</h2>
+            <p>Java</p>
+            <audio id="song">
+                <source src="media/Dunyo sening togangmas.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls" id="song">
+                <div><i class="fas fa-volume-up" id="volume-up"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fas fa-volume-down" id="volume-down"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
